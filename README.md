@@ -1,2 +1,3 @@
 # gh-action-build-javascript
-GitHub Action to build and publish protobuf stubs for multiple languages to Artifact Store on Planton Cloud
+
+GitHub Action to build and publish Javascript (NPM) packages to Artifact Store on Planton Cloud.
