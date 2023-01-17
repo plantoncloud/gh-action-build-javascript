@@ -32,8 +32,8 @@ echo "fetching buf token from artifact-store: ${PLANTON_CLOUD_ARTIFACT_STORE_ID}
 export BUF_TOKEN=$(planton product artifact-store secrets get-buf-token --artifact-store-id ${PLANTON_CLOUD_ARTIFACT_STORE_ID} 2>&1)
 echo "successfully fetched buf token from artifact-store: ${PLANTON_CLOUD_ARTIFACT_STORE_ID}"
 export CI=false
-export YARN_ENABLE_IMMUTABLE_INSTALLS=false
-yarn policies set-version v3.2.3 || true
+# export YARN_ENABLE_IMMUTABLE_INSTALLS=false
+# yarn policies set-version v3.2.3 || true
 echo "running 'make build' step"
 make build
 echo "step 'make build' completed successfully"
